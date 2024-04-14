@@ -29,6 +29,12 @@
 Ex. corePoolSize = 2, maxPoolSize = 4, workerqueueSize = 2. We are trying to assign 7 tasks... So, 1st 4 tasks gets added next 2 are stored in queue but last one gets discarded.
 <img width="1074" alt="Screenshot 2024-04-14 at 5 06 16 PM" src="https://github.com/nisarg0/Multi-threading/assets/60577767/e1585cb0-4cc5-4527-9221-597725872523">
 
+> **Q. How to choose size of poolSize? **
+--> It's good to have poolSize same as num of cores or few more to avoid starvation but not too high b'coz otherwise our threads will waste lot of time in context swtiching.
+--> JVM Memory: As we need to have space to store things(Register, stack, counter) for each thread.
+--> Task Nature: CPU intensive (Need more processing time), I/O Intensive: Thread is usually idle. It's good to have more threads if it's idle for more time (Context switching helps)...
+--> Concurrency, throughput - how fast can be process a req
+--> Memory Requirement: Memory needed to process a req should be taken into account. POST req will make db call store data and everything...
 
 ### Ref
 
