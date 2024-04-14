@@ -15,6 +15,12 @@
 
 <img width="351" alt="Screenshot 2024-04-14 at 1 37 32 PM" src="https://github.com/nisarg0/Multi-threading/assets/60577767/8c51b19b-d9af-481c-b3d2-ffd0d1128eec">
 
+**Joins In Thread:**
+- Join helps threads syncronized.
+- caller thread wait for calling thread to finish. Ex. Inside main t1.join() makes main thread wait for t1 to finish.
+
+<img width="155" alt="Screenshot 2024-04-14 at 3 01 03 PM" src="https://github.com/nisarg0/Multi-threading/assets/60577767/c163b55a-8198-4346-bd70-413b1905d1c6">
+
 
 ### Ref
 
