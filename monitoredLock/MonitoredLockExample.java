@@ -1,3 +1,5 @@
+package monitoredLock;
+
 public class MonitoredLockExample {
 
     public synchronized void task1()  {
