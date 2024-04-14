@@ -21,6 +21,14 @@
 
 <img width="155" alt="Screenshot 2024-04-14 at 3 01 03 PM" src="https://github.com/nisarg0/Multi-threading/assets/60577767/c163b55a-8198-4346-bd70-413b1905d1c6">
 
+**Thread Pool Executor:**
+- Thread Pool has a core Pool of threads which will stay alive even if idle.
+- It has Worker Queues which stores the tasks if in thread pool is busy.
+- Creates a new thread in thread pool when worker queue is full and active threads in thread pool is less than maxPoolSize.
+
+Ex. corePoolSize = 2, maxPoolSize = 4, workerqueueSize = 2. We are trying to assign 7 tasks... So, 1st 4 tasks gets added next 2 are stored in queue but last one gets discarded.
+<img width="1074" alt="Screenshot 2024-04-14 at 5 06 16 PM" src="https://github.com/nisarg0/Multi-threading/assets/60577767/e1585cb0-4cc5-4527-9221-597725872523">
+
 
 ### Ref
 
