@@ -36,6 +36,8 @@ Ex. corePoolSize = 2, maxPoolSize = 4, workerqueueSize = 2. We are trying to ass
 > - Concurrency, throughput - how fast can be process a req
 > - Memory Requirement: Memory needed to process a req should be taken into account. POST req will make db call store data and everything...
 
+-- Max No of threads = No. of CPU cores * (1 + Req waiting time / processing time) -- {It it very at max there are other factors also which will bring this down}
+
 ### Ref
 
 [Awesome YT video](https://www.youtube.com/watch?v=AYiE7_loIsE&list=PL6W8uoQQ2c63f469AyV78np0rbxRFppkx&index=31)
